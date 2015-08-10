@@ -14,17 +14,17 @@ $M = {};
           marginLeft = '0';
           clearInterval($moving);
         } else {
-          marginLeft = '-2%';
+          marginLeft = '-10%';
         }
       } else if (-marginLeft === targetMarginLeft) {
         marginLeft += '%';
         clearInterval($moving);
       } else {
         if (-marginLeft < targetMarginLeft) {
-          marginLeft = parseInt(marginLeft) - 2;
+          marginLeft = parseInt(marginLeft) - 10;
           marginLeft += '%';
         } else if (-marginLeft > targetMarginLeft) {
-          marginLeft = parseInt(marginLeft) + 2;
+          marginLeft = parseInt(marginLeft) + 10;
           marginLeft += '%';
         }
       }
